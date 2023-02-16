@@ -21,9 +21,13 @@ int parse_line(char *line, char** args){
 // main function
 int main(void){
     char line[MAX_LINE];
-
+    // print the welcome message
+    printf("Welcome to the Nabil's Shell \n");
+    printf("Please type the commands in the shell \n");
+    printf("To exit the shell, please type exit \n");
+    printf("To list the supported commands, please type help \n");
     // while loop to read the input line
-    while (1){
+    while (1){        
         printf(">> ");
         // read the input line
         fgets(line, MAX_LINE, stdin);
